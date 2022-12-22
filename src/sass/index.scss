@@ -1,2 +1,15 @@
-@import './common';
-@import './example';
+//@import './common';
+@import './variables';
+@import './utils/buttons';
+@import './sections/header';
+@import './sections/hero';
+@import './sections/products';
+@import './sections/about';
+@import './sections/testimonials';
+@import './sections/locations';
+@import './sections/footer';
+@import './modals/buy-now';
+@import './modals/how-made';
+@import './modals/ice-cream';
+@import './modals/map';
+@import './modals/thankyou';
