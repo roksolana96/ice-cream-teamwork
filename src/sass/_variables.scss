@@ -10,7 +10,7 @@ $colors: (
   'green-transparent': rgba(156, 190, 143, 0.7),
   'orange-main': #d6936d,
   'orange-transparent': rgba(213, 117, 63, 0.7),
-  'ligth-green': #AEC6A5,
+  'green-light': #AEC6A5,
 );
 
 @function getColor($key) {

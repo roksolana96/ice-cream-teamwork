@@ -119,9 +119,6 @@ img {
     gap: 29px;
   }
 }
-.prod__item:nth-child(1) {
-  background: #AEC6A5;
-}
 .prod__item:nth-child(2) {
   background: #efd478;
 }
