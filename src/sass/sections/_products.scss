@@ -1,0 +1,116 @@
+.prod {
+
+    color: getColor(theme-black);
+    background-color: getColor(theme-white);
+    /* background-image: url(add url); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+
+    &__label {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.22;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__header {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.27;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    &__list {
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            gap: 29px;
+        }
+
+    }
+
+    &__item {
+
+        &:nth-child(1) {
+            background: getColor(ligth-green);
+        }
+
+        &:nth-child(2) {
+            background: getColor(yellow-secondary);
+        }
+
+        &:nth-child(3) {
+            background: getColor(orange-main);
+        }
+
+        @media screen and (min-width: $tablet) {
+            flex-basis: calc((100% - 32px) / 3);
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 58px) / 3);
+        }
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.76;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+    &__button {
+        width: 40px;
+        height: 16px;
+        border: none;
+    }
+
+    /* @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero_mob@2x.jpg);
+        };
+
+    @media screen and (min-width: $tablet) {
+        background-image: url(../images/hero_tab.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/hero_tab@2x.jpg);
+                };
+        }
+        
+    @media screen and (min-width: $desktop) {
+        background-image: url(../images/hero.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/hero@2x.jpg);
+            };
+        } */
+}
