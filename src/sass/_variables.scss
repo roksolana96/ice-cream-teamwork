@@ -1,6 +1,24 @@
+$colors: (
+  'yellow-main': #f8d24e,
+  'yellow-secondary': #efd478,
+  'yellow-transparent': rgba(248, 210, 78, 0.7),
+  'theme-white': #fcfcfc,
+  'theme-black': #131313,
+  'theme-grey': #d9d9d9,
+  'theme-grey-2': #ababab,
+  'green-main': #84a178,
+  'green-transparent': rgba(156, 190, 143, 0.7),
+  'orange-main': #d6936d,
+  'orange-transparent': rgba(213, 117, 63, 0.7),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  //color: getColor(theme-black);
+  color: getColor(theme-white);
 }
 a {
   text-decoration: none;
@@ -29,4 +47,24 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* breakpoints */
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+.container {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  @media screen and (min-width: $tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
