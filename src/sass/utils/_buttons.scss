@@ -1,0 +1,140 @@
+.button {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    border-style: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: getColor(yellow-main);
+    border-radius: 10px;
+
+    &.button_products {
+        font-style: 12px;
+        line-height: calc(15 / 12);
+        color: getColor(button-text);
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 11px 26px;
+
+
+        @media screen and (min-width: $desktop) {
+            border-radius: 10px;
+            padding: 12px 34px;
+        }
+
+        &.button_products:hover,
+        &.button_products:focus {
+            background-color: inherit;
+            border: 2px solid getColor(button-hover-border);
+        }
+
+        &.button_products:disabled {
+            border: 2px solid getColor(button-disable-background);
+        }
+
+    }
+
+    &.button__read-more {
+        padding-right: 34px;
+    }
+
+    &.button__our-location {
+        padding-left: 39px;
+        padding-right: 40px;
+    }
+
+    &.button__franchise {
+        padding-left: 55px;
+        padding-right: 54px;
+
+        &.button__franchise:hover,
+        &.button__franchise:focus {
+            background-color: inherit;
+            border: 2px solid getColor(button-hover-border);
+        }
+
+        &.button__franchise:disabled {
+            border: 2px solid getColor(button-disable-background);
+        }
+
+    }
+
+    &.button__submit {
+        padding-left: 34px;
+        font-size: 12px;
+        line-height: calc(15 / 12);
+        color: getColor(theme-black);
+
+        @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            line-height: calc(17 / 14);
+        }
+    }
+
+    &.--button-transperent {
+        background-color: transparent;
+        border: 2px solid getColor(yellow-main);
+    }
+
+
+    &.--button-arrow {
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: getColor(button-hover-background);
+    }
+
+    &:focus {
+        color: getColor(theme-white);
+    }
+
+    &:disabled {
+        background-color: getColor(button-disable-background);
+    }
+
+}
+
+.button__icon {
+    margin-left: 4px;
+    fill: currentColor;
+
+    .button:hover &,
+    .button:focus & {
+        fill: currentColor;
+    }
+
+    .button:disabled & {
+        fill: currentColor;
+    }
+}
+
+.link_button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-decoration-line: underline;
+    color: getColor(yellow-main);
+
+    &:hover {
+        color: getColor(button-hover-background);
+    }
+
+    &:focus {
+        color: getColor(theme-white);
+    }
+
+    &:disabled {
+        color: getColor(button-disable-background);
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: calc(17 / 14);
+    }
+}
