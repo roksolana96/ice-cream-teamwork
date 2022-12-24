@@ -85,12 +85,17 @@ img {
   background-position: center;
   /* background-size: cover; */
 }
+.prod .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .prod__label {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .prod__label {
@@ -111,21 +116,23 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 148px;
 }
 @media screen and (min-width: 768px) {
   .prod__header {
     font-size: 34px;
+    margin-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .prod__header {
     font-size: 36px;
+    margin-bottom: 303px;
   }
 }
 @media screen and (min-width: 768px) {
   .prod__list {
     display: flex;
-    align-items: center;
     gap: 16px;
   }
 }
@@ -134,23 +141,121 @@ img {
     gap: 29px;
   }
 }
+.prod__item {
+  text-align: center;
+  border-radius: 15px;
+  padding: 123px 40px 16px;
+  padding-top: 120px;
+  padding-bottom: 16px;
+  position: relative;
+}
 .prod__item:nth-child(1) {
   background: #AEC6A5;
+}
+.prod__item:nth-child(1) .prod__item--before {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+.prod__item:nth-child(1) .prod__item--before::before {
+  content: "";
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-image: url(../src/images/prod/cream_mob_tab.png);
+  position: absolute;
+  top: -11px;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .prod__item:nth-child(1) .prod__item--before::before {
+    height: 302px;
+    width: 302px;
+    background-image: url(../src/images/prod/cream_desk.png);
+    top: -16px;
+  }
 }
 .prod__item:nth-child(2) {
   background: #efd478;
 }
+.prod__item:nth-child(2) .prod__item--before {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.prod__item:nth-child(2) .prod__item--before::before {
+  content: "";
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-image: url(../src/images/prod/coffee_mob_tab.png);
+  position: absolute;
+  top: -11px;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .prod__item:nth-child(2) .prod__item--before::before {
+    height: 302px;
+    width: 302px;
+    background-image: url(../src/images/prod/coffee_desk.png);
+    top: -16px;
+  }
+}
 .prod__item:nth-child(3) {
   background: #d6936d;
+}
+.prod__item:nth-child(3) .prod__item--before {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+.prod__item:nth-child(3) .prod__item--before::before {
+  content: "";
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-image: url(../src/images/prod/shake_mob_tab.png);
+  position: absolute;
+  top: -11px;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .prod__item:nth-child(3) .prod__item--before::before {
+    height: 302px;
+    width: 302px;
+    background-image: url(../src/images/prod/shake_desk.png);
+    top: -16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prod__item:not(:last-child) {
+    margin-bottom: 168px;
+  }
 }
 @media screen and (min-width: 768px) {
   .prod__item {
     flex-basis: calc((100% - 32px) / 3);
+    padding: 108px 26px 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   .prod__item {
     flex-basis: calc((100% - 58px) / 3);
+    padding: 165px 64px 60px;
+  }
+}
+.prod__item--before {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1200px) {
+  .prod__item--before {
+    height: 302px;
+    width: 302px;
+    top: -151px;
   }
 }
 .prod__name {
@@ -161,6 +266,7 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .prod__name {
@@ -170,6 +276,7 @@ img {
 @media screen and (min-width: 1200px) {
   .prod__name {
     font-size: 30px;
+    margin-bottom: 66px;
   }
 }
 .prod__text {
@@ -182,7 +289,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .prod__text {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 .prod__button {
