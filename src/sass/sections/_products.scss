@@ -3,9 +3,8 @@
     color: getColor(theme-black);
     background-color: getColor(theme-white);
     background-image: url(../src/images/Bg_mobile.png);
-    /* background-repeat: no-repeat; */
     background-position: center;
-    /* background-size: cover; */
+    // background-size: cover;
 
     & .container {
         padding-top: 60px;
@@ -72,6 +71,7 @@
         padding-top: 120px;
         padding-bottom: 16px;
         position: relative;
+        height: 420px;
 
         &:nth-child(1) {
             background: getColor(green-light);
@@ -90,12 +90,26 @@
                     top: -11px;
                     transform: translateX(-50%);
 
+                    @media screen and (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                        background-image: url(../src/images/prod/cream_mob_tab_@2.png);
+                        background-size: 200px 200px;
+                    }
+
                     @media screen and (min-width: $desktop) {
                         height: 302px;
                         width: 302px;
                         background-image: url(../src/images/prod/cream_desk.png);
                         top: -16px;
+
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                            background-image: url(../src/images/prod/cream_desk_@2.png);
+                            background-size: 302px 302px;
                         }
+                    }
                 }
             }
         }
@@ -117,12 +131,26 @@
                         top: -11px;
                         transform: translateX(-50%);
 
+                    @media screen and (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: url(../src/images/prod/coffee_mob_tab_@2.png);
+                            background-size: 200px 200px;
+                        }
+
                         @media screen and (min-width: $desktop) {
                                 height: 302px;
                                 width: 302px;
                                 background-image: url(../src/images/prod/coffee_desk.png);
                                 top: -16px;
+
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                background-image: url(../src/images/prod/coffee_desk_@2.png);
+                                background-size: 302px 302px;
                             }
+                        }
                     }
                 }
         }
@@ -144,12 +172,26 @@
                         top: -11px;
                         transform: translateX(-50%);
 
+                    @media screen and (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: url(../src/images/prod/shake_mob_tab_@2.png);
+                            background-size: 200px 200px;
+                        }
+
                         @media screen and (min-width: $desktop) {
                                 height: 302px;
                                 width: 302px;
                                 background-image: url(../src/images/prod/shake_desk.png);
                                 top: -16px;
+
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                background-image: url(../src/images/prod/shake_desk_@2.png);
+                                background-size: 302px 302px;
                             }
+                        }
                     }
                 }
         }
@@ -163,11 +205,13 @@
         @media screen and (min-width: $tablet) {
             flex-basis: calc((100% - 32px) / 3);
             padding: 108px 26px 12px;
+            height: 428px;
         }
 
         @media screen and (min-width: $desktop) {
             flex-basis: calc((100% - 58px) / 3);
             padding: 165px 64px 60px;
+            height: 536px;
         }
 
         &--before {
@@ -215,6 +259,7 @@
         line-height: 1.76;
         text-align: center;
         letter-spacing: 0.04em;
+        // margin-bottom: auto;
 
         @media screen and (min-width: $desktop) {
             font-size: 16px;
@@ -222,17 +267,26 @@
     }
 
     &__button {
+        position: absolute;
+        bottom: 16px;
+        transform: translateX(-50%);
+        // display: block;
         width: 40px;
         height: 16px;
         border: none;
         background: transparent;
+        margin-top: auto;
+
+        @media screen and (min-width: $desktop) {
+            bottom: 60px;
+        }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../src/images/Bg_mobile@2x.png);
-        };
+        }
 
     @media screen and (min-width: $tablet) {
         background-image: url(../src/images/Bg_tablet.png);
@@ -241,7 +295,7 @@
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: url(../src/images/Bg_tablet@2x.png);
-                };
+                }
         }
         
     @media screen and (min-width: $desktop) {
@@ -251,6 +305,6 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../src/images/Bg_desktop@2x.png);
-            };
+            }
         }
 }

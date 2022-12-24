@@ -81,9 +81,7 @@ img {
   color: #131313;
   background-color: #fcfcfc;
   background-image: url(../src/images/Bg_mobile.png);
-  /* background-repeat: no-repeat; */
   background-position: center;
-  /* background-size: cover; */
 }
 .prod .container {
   padding-top: 60px;
@@ -148,6 +146,7 @@ img {
   padding-top: 120px;
   padding-bottom: 16px;
   position: relative;
+  height: 420px;
 }
 .prod__item:nth-child(1) {
   background: #AEC6A5;
@@ -166,12 +165,24 @@ img {
   top: -11px;
   transform: translateX(-50%);
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prod__item:nth-child(1) .prod__item--before::before {
+    background-image: url(../src/images/prod/cream_mob_tab_@2.png);
+    background-size: 200px 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .prod__item:nth-child(1) .prod__item--before::before {
     height: 302px;
     width: 302px;
     background-image: url(../src/images/prod/cream_desk.png);
     top: -16px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prod__item:nth-child(1) .prod__item--before::before {
+    background-image: url(../src/images/prod/cream_desk_@2.png);
+    background-size: 302px 302px;
   }
 }
 .prod__item:nth-child(2) {
@@ -191,12 +202,24 @@ img {
   top: -11px;
   transform: translateX(-50%);
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prod__item:nth-child(2) .prod__item--before::before {
+    background-image: url(../src/images/prod/coffee_mob_tab_@2.png);
+    background-size: 200px 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .prod__item:nth-child(2) .prod__item--before::before {
     height: 302px;
     width: 302px;
     background-image: url(../src/images/prod/coffee_desk.png);
     top: -16px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prod__item:nth-child(2) .prod__item--before::before {
+    background-image: url(../src/images/prod/coffee_desk_@2.png);
+    background-size: 302px 302px;
   }
 }
 .prod__item:nth-child(3) {
@@ -216,12 +239,24 @@ img {
   top: -11px;
   transform: translateX(-50%);
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prod__item:nth-child(3) .prod__item--before::before {
+    background-image: url(../src/images/prod/shake_mob_tab_@2.png);
+    background-size: 200px 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .prod__item:nth-child(3) .prod__item--before::before {
     height: 302px;
     width: 302px;
     background-image: url(../src/images/prod/shake_desk.png);
     top: -16px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prod__item:nth-child(3) .prod__item--before::before {
+    background-image: url(../src/images/prod/shake_desk_@2.png);
+    background-size: 302px 302px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -233,12 +268,14 @@ img {
   .prod__item {
     flex-basis: calc((100% - 32px) / 3);
     padding: 108px 26px 12px;
+    height: 428px;
   }
 }
 @media screen and (min-width: 1200px) {
   .prod__item {
     flex-basis: calc((100% - 58px) / 3);
     padding: 165px 64px 60px;
+    height: 536px;
   }
 }
 .prod__item--before {
@@ -293,10 +330,19 @@ img {
   }
 }
 .prod__button {
+  position: absolute;
+  bottom: 16px;
+  transform: translateX(-50%);
   width: 40px;
   height: 16px;
   border: none;
   background: transparent;
+  margin-top: auto;
+}
+@media screen and (min-width: 1200px) {
+  .prod__button {
+    bottom: 60px;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prod {
