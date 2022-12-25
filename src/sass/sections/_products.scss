@@ -276,9 +276,14 @@
         border: none;
         background: transparent;
         margin-top: auto;
+        padding: 0;
 
         @media screen and (min-width: $desktop) {
             bottom: 60px;
+        }
+
+        &:hover, &:focus {
+            cursor: pointer;
         }
     }
 

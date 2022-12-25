@@ -140,9 +140,13 @@
   }
   
   .icon-svg {
-    width: 21px;
-    height: 21px;
-    fill: #84a178;
+    width: 34px;
+    height: 34px;
+    fill: getColor(green-main);
+
+    &:hover, &:focus {
+      fill: getColor(theme-white)
+    }
   }
   
   .footer__contact {
