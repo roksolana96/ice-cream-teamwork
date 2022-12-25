@@ -54,6 +54,7 @@ cursor: pointer;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 60px;
     
     // flex-basis: calc((100% - 32px) / 3);
 
@@ -145,36 +146,48 @@ padding-bottom: 8px;
     text-decoration: none;}
 & .location-nav__item + .location-nav__item {margin-top: 6px;}
 /* .location-nav__contacts .location-nav__item + .location-nav__item {margin-top: 4px;} */
-
 }
 
+.location-nav__adress   {@media screen and (max-width: $tablet) {
+    width: 180px;}}
+
+// Button
 
 .button {cursor: pointer;
-    background-color: getColor(yellow-main);
-    color:#000000;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
     align-items: center;
     text-align: center;
 
-    border-radius: 10px;
-    border: solid transparent;
+    // border-radius: 10px;
+    // border: solid transparent;
 
+@media screen and (min-width: $tablet) {
+font-size: 16px;
+line-height: 1.4;}
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-
-.button:hover, .button:focus, 
-.button:active {color: #F5F4FA;
-
-}
-    
-.title__button{display: block;
+   
+&__title{display: block;
     /* display: inline-block;     */
     padding: 4px 22px;
     min-width:80px;
+}}
+
+
+.button__location
+{@media screen and (max-width: $tablet) 
+    {
+.button__our-location{margin: 0 auto;
+margin-bottom: 16px;}
+.button__franchise {margin: 0 auto;}
+// .button__our-location + .button__franchise {margin-top: 16px;}
 }
 
+@media screen and (min-width: $tablet) 
+    {
+    display: flex;
+    justify-content: center;
+    .button__our-location{margin-right: 16px;}
+      }
+}
