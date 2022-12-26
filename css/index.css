@@ -1844,7 +1844,7 @@ header {
   margin-right: auto;
 }
 .modal-howmade__video img {
-  display: inline;
+  display: inline-block;
 }
 .modal-howmade__text {
   width: 224px;
