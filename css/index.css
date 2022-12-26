@@ -970,10 +970,10 @@ header {
   }
 }
 .about-button:hover {
-  background-color: #0a8817;
+  background-color: #0A8817;
 }
 .about-button:focus {
-  background-color: #0a8817;
+  background-color: #0A8817;
   color: #fcfcfc;
 }
 .about-button:focus .about-button__icon {
@@ -1018,6 +1018,19 @@ header {
 @media screen and (min-width: 768px) {
   .advantages__list {
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 0 auto;
+    width: 616px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 auto;
+    width: 1168px;
   }
 }
 .advantages__item {
@@ -1030,12 +1043,12 @@ header {
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
-    width: 152px;
+    width: calc((100% - 160px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__item {
-    width: 368px;
+    width: calc((100% - 64px) / 3);
   }
 }
 .advantages__item:not(:last-child) {
@@ -1043,13 +1056,6 @@ header {
 }
 @media screen and (min-width: 768px) {
   .advantages__item:not(:last-child) {
-    margin-right: 80px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__item:not(:last-child) {
-    margin-right: 32px;
     margin-bottom: 0;
   }
 }
@@ -1818,6 +1824,28 @@ header {
   border: 1px solid #84A178;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.modal-howmade {
+  position: relative;
+  margin: 28px;
+}
+.modal-howmade__title {
+  font-family: "Seymour One", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 20px;
+}
+.modal-howmade__video {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.modal-howmade__text {
+  width: 224px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
 }
 
 /* модальне вікно */
