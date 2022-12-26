@@ -1,0 +1,138 @@
+
+/* модальне вікно */
+/*.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms, visibility 500ms;
+  }
+  
+  .modal-backdrop.is-hidden .modal {
+    transform: rotate(-90deg);
+  }*/
+ 
+ /* .modal {
+    width: 280px;
+    height: 981px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #ffffff;
+    border-radius: 20px;
+  
+  
+  .close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    
+     color: #000000; 
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+
+
+
+  /* модальне вікно modal-form*/
+
+.modal-forma{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 40px;
+}
+  .title-modal{ 
+    margin: 20px 91px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+line-height: 1.5px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #131313;
+
+  }
+ .buy{ display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+ }
+
+.buy-ice{
+width: 132;
+  height: 199px;
+  border-bottom: 2px solid #96AF8C;
+  border-left: 2px solid #96AF8C;
+  border-right:2px solid #96AF8C ;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15px;
+margin-bottom: 20px;
+}
+//.buy-ice__img{
+  
+//}
+
+.buy-ice__border{
+height: 136p;
+  border-bottom: 2px solid #96AF8C;
+  border-left: 2px solid #96AF8C;
+  border-right:2px solid #96AF8C ;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15px;
+
+}
+
+  .buy-ice__title{
+    font-size: 16px;
+line-height: 1.25;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #131313;
+margin-top: 20px;
+  }
+
+
+/* модальна форма modal-form*/
+
+.modal-input{
+  margin-bottom: 12px;
+      width: 224px;
+      height: 32px;
+    
+      background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px; 
+}  
+.user-coment-area{
+ 
+  
+  width: 224px;
+  height: 32px;
+  resize: none;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px; 
+  margin-bottom: 20px;
+}
+  
