@@ -212,7 +212,7 @@
   line-height: 1.29;
   align-items: center;
   text-align: center;
-  color: #000000;
+  color: getColor(button-text);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -226,11 +226,11 @@
   }
 
   &:hover {
-    background-color: #0a8817;
+    background-color: getColor(button-hover-background);
   }
 
   &:focus {
-    background-color: #0a8817;
+    background-color: getColor(button-hover-background);
     color: getColor(theme-white);
   }
 
@@ -241,7 +241,7 @@
   &__icon {
     display: flex;
     margin-left: 8px;
-    fill: #000000;
+    fill: getColor(button-text);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -275,6 +275,18 @@
 
     @media screen and (min-width: $tablet) {
       flex-direction: row;
+      flex-wrap: wrap;
+      gap: 80px;
+      margin: 0 auto;
+      width: 616px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin: 0 auto;
+      width: 1168px;
     }
   }
 
@@ -287,23 +299,17 @@
     width: 230px;
 
     @media screen and (min-width: $tablet) {
-      width: 152px;
+      width: calc((100% - 160px) / 3);
     }
 
     @media screen and (min-width: $desktop) {
-      width: 368px;
+      width: calc((100% - 64px) / 3);
     }
 
     &:not(:last-child) {
       margin-bottom: 22px;
 
       @media screen and (min-width: $tablet) {
-        margin-right: 80px;
-        margin-bottom: 0;
-      }
-
-      @media screen and (min-width: $desktop) {
-        margin-right: 32px;
         margin-bottom: 0;
       }
     }
