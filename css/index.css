@@ -1840,11 +1840,17 @@ header {
 .modal-howmade__video {
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-howmade__video img {
+  display: inline;
 }
 .modal-howmade__text {
   width: 224px;
   font-size: 14px;
   line-height: 1.4;
+  margin: 0 auto;
   color: #131313;
 }
 
