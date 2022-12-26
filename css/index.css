@@ -347,46 +347,8 @@ header {
 }
 
 .hero {
-  height: 600px;
   background-color: #84a178;
-  padding: 14px 32px;
-}
-.hero .container {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-.hero__title {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.27;
-  color: #fcfcfc;
-  width: 247px;
-  /*position: absolute;
-      width: 247px;
-      height: 97px;*/
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-.hero__button {
-  position: absolute;
-  bottom: 0;
-  transform: translateX(-50%);
-  display: block;
-  width: 40px;
-  height: 16px;
-  border: none;
-  background: transparent;
-  margin-top: auto;
-}
-@media screen and (min-width: 1200px) {
-  .hero__button {
-    bottom: 60px;
-  }
-}
-
-/*&__block {
+  /*&__block {
     &__item{
         font-family: 'Montserrat';
         font-style: normal;
@@ -404,7 +366,6 @@ header {
         @media screen  and (min-width: $tablet) {
             font-size: 46px;
         }
-
         @media screen and (min-width: $desktop) {
             font-family: 'Montserrat';
             font-style: normal;
@@ -420,6 +381,70 @@ header {
         }
         }
     }*/
+}
+.hero .container {
+  padding: 50px 0px 0px 0px;
+}
+.hero__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  width: 247px;
+  /*position: absolute;
+      width: 247px;
+      height: 97px;*/
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.hero__title--big {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 34px;
+  line-height: 0.965;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.hero__nav {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: calc(186px + 67.8125vw - 217px);
+  margin-left: 20px;
+}
+.hero__nav--first {
+  margin-right: 12px;
+}
+.hero__dots {
+  width: 100%;
+  height: 75px;
+}
+@media screen and (max-width: 480px) {
+  .hero__dots {
+    height: 15.625vw;
+  }
+}
+.hero__cream {
+  position: relative;
+  height: 0;
+}
+.hero__cream--inner {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  height: 325.5px;
+}
+@media screen and (max-width: 480px) {
+  .hero__cream--inner {
+    height: 67.8125vw;
+  }
+}
 .hero__card {
   position: absolute;
   width: 456px;
@@ -427,7 +452,6 @@ header {
   left: 652px;
   top: 104px;
 }
-
 .hero__card1 {
   position: absolute;
   width: 225px;
