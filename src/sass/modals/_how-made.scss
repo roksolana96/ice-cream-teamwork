@@ -1,21 +1,12 @@
 .modal-howmade {
-  position: absolute;
+  position: fixed;
   width: 280px;
   padding: 28px 0px;
   margin: auto;
   background-color: getColor(theme-white);
   border: 1px solid getColor(yellow-main);
   border-radius: 10px;
-  top: 420%;
-  @media screen and (min-width: $mobile) {
-    top: 450%;
-  }
-  @media screen and (min-width: $tablet) {
-    top: 250%;
-  }
-  @media screen and (min-width: $desktop) {
-    top: 300%;
-  }
+  top: 50%;
   left: 50%;
   &__title {
     font-family: 'Seymour One', Arial, Helvetica, sans-serif;
