@@ -4,32 +4,6 @@
       <div>
         <h1 class="hero__title">ice cream made with</h1>
         <span class="hero__title--big">passion</span>
-        <!--<ul class="hero__block">
-            <li class="hero__item"><p class="hero__numb">16</p></li>
-            <li class="hero__item"><p class="hero__text">cafes</p></li>
-            <li class="hero__item"><p class="hero__numb">23</p></li>
-            <li class="hero__item"><p class="hero__text">food trucks</p></li>
-         </ul>-->
-        <div class="">
-          <!-- <ul class="hero__thumb">
-                <li class="hero__item">
-                    <div class="hero__box-1">
-                        <svg class="hero__icons" width="32" height="34">
-                            <use href="./images/hero/symbol-defs.svg#icon-16"></use>
-                        </svg>
-                        <p class="hero__text">cafes</p>
-                    </div>
-                </li>
-                <li class="hero__item">
-                    <div class="hero__box-2">
-                        <svg class="hero__icons" width="36" height="34">
-                            <use href="./images/hero/symbol-defs.svg#icon-23"></use>
-                        </svg>
-                        <p class="hero__text">food trucks</p>
-                    </div>
-                </li>
-            </ul> -->
-        </div>
         <ul class="hero__nav">
           <li class="hero__nav--first">
             <a
@@ -43,7 +17,15 @@
           </li>
         </ul>
         <div class="hero__about">
-          <img class="hero__aboutpic" src="./images/hero/manyicecream-tablet.png" alt="icecream" />
+          <img class="hero__aboutpic" 
+          srcset="
+          ./images/hero/manyicecream-tablet.png 152w,
+          ./images/hero/manyicecream-tablet@2x.png 304w,
+          ./images/hero/manyicecream-desktop.png 225w,
+          ./images/hero/manyicecream-desktop@2x.png 450w
+        "
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+          src="./images/hero/manyicecream-tablet.png" alt="icecream" />
           <div>
             <p class="hero__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
