@@ -1390,21 +1390,16 @@ header {
   }
 }
 
+.location .container {
+  position: relative;
+  top: -132px;
+}
+
 .location {
+  background-color: #84a178;
   /* text-align: center; */
-  background-color: transparent;
   padding: 0;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .location {
-    margin-bottom: 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .location {
-    margin-bottom: 120px;
-  }
+  margin-bottom: -12px;
 }
 .location__block {
   margin: 0 auto;
