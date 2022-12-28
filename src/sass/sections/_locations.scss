@@ -117,14 +117,14 @@
 
   &__city {
     color: #131313;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
     @media screen and (min-width: $tablet) {
-      padding-bottom: 12px;
+      margin-bottom: 12px;
     }
 
     @media screen and (min-width: $desktop) {
-      padding-bottom: 8px;
+      margin-bottom: 8px;
     }
   }
 
@@ -142,18 +142,18 @@
 .location-nav__hour {
   color: getColor(theme-grey-2);
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 
   &:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 }
 
@@ -234,6 +234,7 @@
 // Button
 
 .button {
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   font-size: 14px;
