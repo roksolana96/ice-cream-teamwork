@@ -1759,9 +1759,6 @@ header {
   }
 }
 
-/* .footer .container {
-  padding: 20px;
-} */
 .footer__container {
   margin: 0px;
 }
@@ -1938,18 +1935,21 @@ header {
 .footer__contact-text {
   font-weight: 700;
   font-size: 12px;
-  line-height: 2.2;
+  line-height: 1.834;
   text-align: right;
   color: #131313;
 }
 @media screen and (min-width: 768px) {
   .footer__contact-text {
     font-size: 14px;
+    line-height: 1.857;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__contact-text {
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1958,13 +1958,21 @@ header {
   margin-left: 3px;
   font-weight: 700;
   font-size: 12px;
-  line-height: 2.2;
+  line-height: 1.834;
   text-align: right;
   color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .footer__contact-tel {
     font-size: 14px;
+    line-height: 1.857;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact-tel {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.02em;
   }
 }
 
