@@ -1,7 +1,13 @@
 .modal-icecream {
   position: fixed;
   width: 280px;
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+  }
   padding: 28px 0px;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 20px;
+  }
   margin: auto;
   background-color: getColor(theme-white);
   border: 1px solid getColor(yellow-main);
@@ -48,7 +54,9 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
-    gap: 9px;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
   }
   &__parameter {
     position: relative;
@@ -61,7 +69,10 @@
     border: 1px solid getColor(green-main);
     position: absolute;
     top: -10px;
-    left: 0;
+    left: 3px;
+    @media screen and (min-width: $tablet) {
+      left: 14px;
+    }
     border-radius: 40px;
   }
   &__rounded {
@@ -76,11 +87,15 @@
     width: 43px;
     height: 43px;
     background-color: #9cbe8f;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     position: absolute;
     border-radius: 50%;
     top: -9px;
-    left: 5px;
+    left: 8px;
     z-index: -1;
+    @media screen and (min-width: $tablet) {
+      left: 19px;
+    }
   }
   &__box-text {
     font-size: 10px;
@@ -110,6 +125,13 @@
   }
   &__list-item:not(:last-child) {
     margin-bottom: 11px;
+  }
+
+  &__content .modal-input,
+  &__content .user-coment-area {
+    @media screen and (min-width: $tablet) {
+      width: 368px;
+    }
   }
 }
 

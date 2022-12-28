@@ -2197,6 +2197,16 @@ header {
   top: 50%;
   left: 50%;
 }
+@media screen and (min-width: 768px) {
+  .modal-icecream {
+    width: 568px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-icecream {
+    padding: 32px 20px;
+  }
+}
 .modal-icecream__title {
   font-family: "Seymour One", Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -2237,7 +2247,9 @@ header {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
-  gap: 9px;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .modal-icecream__parameter {
   position: relative;
@@ -2250,8 +2262,13 @@ header {
   border: 1px solid #84a178;
   position: absolute;
   top: -10px;
-  left: 0;
+  left: 3px;
   border-radius: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal-icecream__parameter::before {
+    left: 14px;
+  }
 }
 .modal-icecream__rounded {
   margin-bottom: 15px;
@@ -2265,11 +2282,17 @@ header {
   width: 43px;
   height: 43px;
   background-color: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   position: absolute;
   border-radius: 50%;
   top: -9px;
-  left: 5px;
+  left: 8px;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .modal-icecream__rounded::after {
+    left: 19px;
+  }
 }
 .modal-icecream__box-text {
   font-size: 10px;
@@ -2299,6 +2322,11 @@ header {
 }
 .modal-icecream__list-item:not(:last-child) {
   margin-bottom: 11px;
+}
+@media screen and (min-width: 768px) {
+  .modal-icecream__content .modal-input, .modal-icecream__content .user-coment-area {
+    width: 368px;
+  }
 }
 
 .modal-close {
