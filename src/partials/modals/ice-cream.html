@@ -1,4 +1,4 @@
-<div class="modal modal-icecream" data-modal="2">
+<div class="modal modal-icecream" data-modal="3">
     <button class="modal-close js-modal-close" type="button">
         <svg class="modal__cross" width="14" height="14">
             <use href="././images/icons.svg#mobile_menu_x"></use>
@@ -8,5 +8,73 @@
         icecream</h2>
     <div class="modal-icecream__content">
         <span class="modal-icecream__image"></span>
+        <ul class="modal-icecream__parameters">
+            <li class="modal-icecream__parameter">
+                <p class="modal-icecream__rounded">320</p>
+                <p class="modal-icecream__box-text">kcal</p>
+            </li>
+            <li class="modal-icecream__parameter">
+                <p class="modal-icecream__rounded">4g</p>
+                <p class="modal-icecream__box-text">Prote</p>
+            </li>
+            <li class="modal-icecream__parameter">
+                <p class="modal-icecream__rounded">8,2g</p>
+                <p class="modal-icecream__box-text">Fats</p>
+            </li>
+            <li class="modal-icecream__parameter">
+                <p class="modal-icecream__rounded">40,4g</p>
+                <p class="modal-icecream__box-text">Carbs</p>
+            </li>
+        </ul>
+        <div class="modal-icecream__ingridients">
+            <h3 class="modal-icecream__ingridients-title">Ingredients</h3>
+            <ul class="modal-icecream__list">
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Milk</p>
+                    <p class="modal-icecream__list-text">100ml</p>
+                </li>
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Belgian chocolate</p>
+                    <p class="modal-icecream__list-text">20g</p>
+                </li>
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Cream</p>
+                    <p class="modal-icecream__list-text">150 ml</p>
+                </li>
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Cocoa powder</p>
+                    <p class="modal-icecream__list-text">30g</p>
+                </li>
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Sugar</p>
+                    <p class="modal-icecream__list-text">40g</p>
+                </li>
+                <li class="modal-icecream__list-item">
+                    <p class="modal-icecream__list-text">Vanilla sugar</p>
+                    <p class="modal-icecream__list-text">10g</p>
+                </li>
+            </ul>
+        </div>
+
+        <form name="form-bay" class="modal-forma">
+
+
+
+
+            <label class="" for="user-name">
+                <input type="text" name="user-name" id="user-name" class="modal-input" placeholder="Name">
+
+            </label>
+
+            <label class="" for="user-tel">
+                <input type="tel" name="user-tel" id="user-tel" class="modal-input" placeholder="Phone">
+
+            </label>
+
+            <label class="user-coment">
+                <textarea name="coments" rows="7" class="user-coment-area" placeholder="Comment"></textarea>
+            </label>
+
+            <button type="submit" class="button send">Submit</button>
     </div>
 </div>

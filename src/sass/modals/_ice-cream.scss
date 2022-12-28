@@ -16,9 +16,100 @@
     margin-bottom: 20px;
     text-align: center;
   }
+  &__content {
+    position: relative;
+    padding: 0 20px;
+  }
   &__image {
     background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
     box-shadow: 0 5.34219px 20.0332px #0a881740;
+    width: 132px;
+    height: 139px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -170px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__image::before {
+    content: '';
+    height: 139px;
+    width: 132px;
+    background-image: url('/src/images/modal/ice-cream-modal.png');
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+  &__parameters {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+  }
+  &__parameter {
+    position: relative;
+    flex-basis: calc(100%);
+  }
+  &__parameter::before {
+    content: '';
+    width: 53px;
+    height: 72px;
+    border: 1px solid getColor(green-main);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-radius: 40px;
+  }
+  &__rounded {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(28 / 10);
+    color: getColor(theme-black);
+  }
+  &__rounded::after {
+    content: '';
+    width: 43px;
+    height: 43px;
+    background-color: #9cbe8f;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+    left: 5px;
+    z-index: -1;
+  }
+  &__box-text {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    color: getColor(theme-black);
+  }
+  &__ingridients-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    color: getColor(theme-black);
+    margin-bottom: 24px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-text {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: getColor(theme-black);
+  }
+  &__list-item:not(:last-child) {
+    margin-bottom: 11px;
   }
 }
 
