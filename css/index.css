@@ -2140,6 +2140,65 @@ header {
   right: 12px;
 }
 
+.modal-location {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  width: 280px;
+  height: 365px;
+  padding: 28px;
+  text-align: center;
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-location {
+    width: 568px;
+    height: 449px;
+    padding: 32px 60px;
+  }
+}
+.modal-location__title {
+  font-family: "Seymour One", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal-location__title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+.modal-location__map {
+  margin-bottom: 32px;
+}
+
+.button-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  pointer-events: all;
+  background-color: #fcfcfc;
+  border: none;
+}
+
+.modal-close {
+  background-color: #fcfcfc;
+  width: 20px;
+  height: 20px;
+}
+
 /* модальне вікно */
 /*.modal-backdrop {
   position: fixed;
