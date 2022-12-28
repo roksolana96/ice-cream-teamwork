@@ -54,14 +54,3 @@
     width: 20px;
     height: 20px;
 }
-
-.modal.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal.active,
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
