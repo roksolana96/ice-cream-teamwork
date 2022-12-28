@@ -1,18 +1,21 @@
-.location .container{
-    position: relative;
-    top: -132px;
-//     position: absolute;
-// left: 0px;
-// right: 0px;
-// padding-bottom: 500px;
-}
+// .location .container{
+//     position: relative;
+//     top: -353px;
+
+
+// @media screen and (min-width: $tablet) {
+// top: -299px;
+// }
+// @media screen and (min-width: $desktop) {
+//     top: -128px;
+// }
+// }
 
 .location{
-    background-color: getColor(green-main);
+    // background-color: getColor(green-main);
     /* text-align: center; */
-    // background-color: transparent;
+    background-color: transparent;
     padding: 0;
-    margin-bottom: -12px;
 //     margin-bottom: 60px;
 // @media screen and (min-width: $tablet) {
 //     margin-bottom: 40px;

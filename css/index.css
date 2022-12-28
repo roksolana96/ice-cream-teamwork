@@ -1304,19 +1304,26 @@ header {
 
 .gallery {
   background-image: url("../src/images/Bg_mobile.png");
-  /*  &__picture {
-            margin-top: 32px;
-        }
-    @media screen and (min-width: 768) {
-        margin-top: 60px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-top: 80px;
-    } */
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery {
     background-image: url("../src/images/Bg_mobile@2x.png");
+  }
+}
+.gallery__picture {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  top: -32px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__picture {
+    top: -145px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__picture {
+    top: -99px;
   }
 }
 .gallery__box {
@@ -1365,6 +1372,7 @@ header {
   line-height: 1.85;
   text-align: center;
   color: #131313;
+  padding-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   .gallery__title {
@@ -1376,30 +1384,34 @@ header {
 .foto {
   margin: 0 auto;
   border-radius: 50%;
-  margin-top: 80px;
-  margin-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .foto {
+    margin-top: 48px;
+    margin-bottom: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
   .foto {
-    margin-bottom: 100px;
+    margin-top: 45px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .foto {
-    margin-bottom: 140px;
+    margin-top: 45px;
+    margin-bottom: 32px;
   }
 }
 
-.location .container {
-  position: relative;
-  top: -132px;
+.gallery .container {
+  padding-top: 32px;
 }
 
 .location {
-  background-color: #84a178;
   /* text-align: center; */
+  background-color: transparent;
   padding: 0;
-  margin-bottom: -12px;
 }
 .location__block {
   margin: 0 auto;
@@ -1668,6 +1680,7 @@ header {
 .footer {
   background: #84a178;
   width: 100%;
+  padding-top: 1095px;
 }
 @media screen and (min-width: 480px) {
   .footer {
@@ -1678,13 +1691,18 @@ header {
   .footer {
     display: flex;
     flex-direction: column;
+    padding-top: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    max-width: 1600px;
     flex-direction: column;
+    padding-top: 636px;
   }
+}
+
+.footer .container {
+  padding: 20px;
 }
 
 .footer__container {
@@ -1722,18 +1740,21 @@ header {
 }
 @media screen and (min-width: 480px) {
   .footer__title {
+    width: 232px;
     font-size: 18px;
     line-height: 1.22;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__title {
+    width: 352px;
     letter-spacing: 0.04em;
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__title {
+    width: 504px;
     line-height: 1.24;
     width: auto;
   }
@@ -1900,24 +1921,21 @@ header {
   line-height: 2.1;
   text-align: center;
   color: #7a7a7a;
-  margin: 20px 0px 20px;
-}
-@media screen and (min-width: 480px) {
-  .footer__compani {
-    margin: 20px 0px 20px;
-  }
+  /* margin: 0px -32px 20px;*/
 }
 @media screen and (min-width: 768px) {
   .footer__compani {
     display: flex;
     flex-direction: row;
-    padding: 12px 0px 12px;
     justify-content: center;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__compani {
-    padding: 12px 0px 12px;
+    padding-top: 12px;
+    max-width: 1600px;
   }
 }
 
@@ -2080,6 +2098,38 @@ header {
   line-height: 1.4;
   margin: 0 auto;
   color: #131313;
+}
+
+.modal-close {
+  background-color: unset;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.modal-icecream {
+  position: fixed;
+  width: 280px;
+  padding: 28px 0px;
+  margin: auto;
+  background-color: #fcfcfc;
+  border: 1px solid #f8d24e;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+}
+.modal-icecream__title {
+  font-family: "Seymour One", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modal-icecream__image {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7019607843), rgba(156, 190, 143, 0.7019607843)), #d9d9d9;
+  box-shadow: 0 5.34219px 20.0332px rgba(10, 136, 23, 0.2509803922);
 }
 
 .modal-close {

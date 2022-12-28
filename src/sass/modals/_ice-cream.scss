@@ -1,0 +1,31 @@
+.modal-icecream {
+  position: fixed;
+  width: 280px;
+  padding: 28px 0px;
+  margin: auto;
+  background-color: getColor(theme-white);
+  border: 1px solid getColor(yellow-main);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  &__title {
+    font-family: 'Seymour One', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: getColor(theme-black);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__image {
+    background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
+    box-shadow: 0 5.34219px 20.0332px #0a881740;
+  }
+}
+
+.modal-close {
+  background-color: unset;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
