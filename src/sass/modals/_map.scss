@@ -33,26 +33,41 @@
     @media screen and (min-width: 768px) {
       font-size: 20px;
       line-height: calc(28 / 20);
-
       margin-bottom: 32px;
     }
   }
   &__map {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
   }
 }
 
 .button-close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 8px;
+  right: 8px;
   pointer-events: all;
   background-color: getColor(theme-white);
   border: none;
+
+  @media screen and (min-width: $tablet) {
+      top: 12px;
+      right: 12px;
+  }
+
+  &.modal-close {
+      background-color: getColor(theme-white);
+      width: 20px;
+      height: 20px;
+  
+      @media screen and (min-width: $tablet) {
+        width: 24px;
+        height: 24px;
+      }
+    }
 }
 
-.modal-close {
-  background-color: getColor(theme-white);
-  width: 20px;
-  height: 20px;
-}
+
