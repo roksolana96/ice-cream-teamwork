@@ -1,17 +1,18 @@
 .footer {
   background: #84a178;
   width: 100%;
-
+  padding-top: 1095px;
   @media screen and (min-width: 480px) {
     display: block;
   }
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    padding-top: 360px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: column;
+    padding-top: 636px;
   }
 }
 
