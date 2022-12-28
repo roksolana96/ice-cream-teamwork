@@ -1,260 +1,289 @@
-// .location .container{
-//     position: relative;
-//     top: -353px;
-
-
-// @media screen and (min-width: $tablet) {
-// top: -299px;
-// }
-// @media screen and (min-width: $desktop) {
-//     top: -128px;
-// }
-// }
-
-.location{
-    // background-color: getColor(green-main);
-    /* text-align: center; */
-    background-color: transparent;
-    padding: 0;
-//     margin-bottom: 60px;
-// @media screen and (min-width: $tablet) {
-//     margin-bottom: 40px;
-// }
-// @media screen and (min-width: $desktop) {
-//     margin-bottom: 120px;
-// }
-
-&__block{
-    margin: 0 auto;
-    padding: 0;
-
-@media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+.background-block {
+  background-color: getColor(green-main);
 }
 
-@media screen and (min-width: $desktop) {
-    display: flex;
-    gap: 32px;
-    justify-content: center;}
-}}
+.location .container {
+  position: relative;
+  top: -353px;
+  @media screen and (min-width: $tablet) {
+    top: -299px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -128px;
+  }
+}
 
-.location__item{
-    width: 280px;
+.location {
+  margin-bottom: -353px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: -299px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: -128px;
+  }
+
+  &__block {
     margin: 0 auto;
-    margin-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding: 0;
 
-    box-shadow: 0px 8px 30px rgba(47, 45, 46, 0.1);
-    border-radius: 24px;
-    background-color: #FFFFFF;
-    cursor: pointer;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
 
-@media screen and (max-width: $tablet) {&:last-child{margin-bottom: 20px;}}
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+    }
+  }
+}
 
-@media screen and (min-width: $tablet)
-    {width: 224px;
+.location__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+
+  box-shadow: 0px 8px 30px rgba(47, 45, 46, 0.1);
+  border-radius: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @media screen and (max-width: $tablet) {
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 224px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 24px;
     padding-left: 24px;
     margin-bottom: 40px;
+  }
 
-}
-
-@media screen and (min-width: $desktop) 
-    {width: 368px;
+  @media screen and (min-width: $desktop) {
+    width: 368px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 60px;
-}}
+  }
+}
 
-.location-nav{
+.location-nav {
+  max-width: 216px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
 
-    max-width: 216px;
-    padding-bottom:24px;
-    border-bottom: 1px solid #E1E1E1;
+  margin: 0;
+  margin-top: 20px;
 
-    margin: 0;
-    margin-top: 20px;
-
-@media screen and (min-width: $tablet)
-    {margin-top: 32px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
     padding-bottom: 32px;
     max-width: 176px;
-    padding-right: 24px;}
+    padding-right: 24px;
+  }
 
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     max-width: 288px;
+  }
 
-}
- 
-
-&__type {
+  &__type {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
 
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
 
-@media screen and (min-width: $tablet)
-    {font-size: 14px;
-    line-height: 1.8;}
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
 
-@media screen and (min-width: $desktop) 
-    {font-size: 16px;
-    line-height: 1.9;}
-}
-
-&__city{
-    color:#131313;
+  &__city {
+    color: #131313;
     padding-bottom: 8px;
 
-@media screen and (min-width: $tablet) {
-    padding-bottom: 12px;}
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 12px;
+    }
 
-@media screen and (min-width: $desktop) {
-    padding-bottom: 8px;}
-}
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 8px;
+    }
+  }
 
-&__map{ 
+  &__map {
     text-decoration: none;
-    color:getColor(orange-main);}
+    color: getColor(orange-main);
+  }
 }
 
-.location-nav__day{color:#131313;
-    margin: 0;}
+.location-nav__day {
+  color: #131313;
+  margin: 0;
+}
 
-.location-nav__hour{color: getColor(theme-grey-2);
-    margin: 0;
+.location-nav__hour {
+  color: getColor(theme-grey-2);
+  margin: 0;
+  padding-bottom: 8px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
     padding-bottom: 8px;
+  }
 
-&:last-child{padding-bottom: 0;}
-
-@media screen and (min-width: $tablet) {
-    padding-bottom: 8px;}
-
-@media screen and (min-width: $desktop) {
-    padding-bottom: 12px;}
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 12px;
+  }
 }
 
-.location-nav__contacts{
-    margin-top: 24px;
+.location-nav__contacts {
+  margin-top: 24px;
 
-@media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     margin-top: 32px;
-}
+  }
 
-@media screen and (min-width: $desktop) {
-    margin-top: 32px;}
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+  }
 
-
-.location-nav__info{
+  .location-nav__info {
     line-height: 1.5;
     color: #131313;
-    text-decoration: none;}
-& .location-nav__item + .location-nav__item {margin-top: 6px;}
-/* .location-nav__contacts .location-nav__item + .location-nav__item {margin-top: 4px;} */
+    text-decoration: none;
+  }
+  & .location-nav__item + .location-nav__item {
+    margin-top: 6px;
+  }
+  /* .location-nav__contacts .location-nav__item + .location-nav__item {margin-top: 4px;} */
 }
 
-.location-nav__adress   {@media screen and (max-width: $tablet) {
-    width: 180px;}}
+.location-nav__adress {
+  @media screen and (max-width: $tablet) {
+    width: 180px;
+  }
+}
 
-.location-cafe{
-    display: inline-block;
-    border-style: none;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 22px;
-    padding-right: 22px;
-    background: getColor(yellow-main);
-    border-radius: 4px;
+.location-cafe {
+  display: inline-block;
+  border-style: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background: getColor(yellow-main);
+  border-radius: 4px;
 
-
-@media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 14px;
-    padding-right: 14px;}
+    padding-right: 14px;
+  }
 
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 13px;
-    padding-right: 13px;}
+    padding-right: 13px;
+  }
 
-
-&__name{font-weight: 500;
+  &__name {
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
     align-items: center;
     text-align: center;
     color: getColor(button-text);
 
-@media screen and (min-width: $tablet) 
-    {font-size: 16px;
-    line-height: 1.4;}
-}}
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
 
-.location-cafe__food {@media screen and (min-width: $desktop) 
-    {padding-right: 10px;
-    padding-left: 10px;}}
-
+.location-cafe__food {
+  @media screen and (min-width: $desktop) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 
 // Button
 
 .button {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    border-style: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 35px;
-    padding-right: 35px;
-    background: getColor(yellow-main);
-    border-radius: 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  border-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background: getColor(yellow-main);
+  border-radius: 10px;
 
-    &.button__our-location {
-        padding-left: 39px;
-        padding-right: 40px;
-    }
+  &.button__our-location {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
 
-    &.button__franchise {
-        padding-left: 55px;
-        padding-right: 54px;
+  &.button__franchise {
+    padding-left: 55px;
+    padding-right: 54px;
 
     &.button__franchise:hover,
     &.button__franchise:focus {
-        background-color: inherit;
-        border: 2px solid getColor(button-hover-border);}
+      background-color: inherit;
+      border: 2px solid getColor(button-hover-border);
+    }
 
     &.button__franchise:disabled {
-        border: 2px solid getColor(button-disable-background);}
+      border: 2px solid getColor(button-disable-background);
+    }
+  }
+}
 
-    }}
+.button__location {
+  @media screen and (max-width: $tablet) {
+    .button__our-location {
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+    .button__franchise {
+      margin: 0 auto;
+    }
+  }
 
-
-.button__location {@media screen and (max-width: $tablet) 
-    {
-.button__our-location
-    {margin: 0 auto;
-    margin-bottom: 16px;}
-.button__franchise 
-    {margin: 0 auto;}}
-
-@media screen and (min-width: $tablet) 
-    {display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
     justify-content: center;
 
-.button__our-location
-    {margin-right: 16px;}
-}}
-
+    .button__our-location {
+      margin-right: 16px;
+    }
+  }
+}

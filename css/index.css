@@ -1310,6 +1310,26 @@ header {
     background-image: url("../src/images/Bg_mobile@2x.png");
   }
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: url("../src/images/Bg_tablet.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../src/images/Bg_tablet@2x.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    background-image: url("../src/images/Bg_desktop.png");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url("../src/images/Bg_desktop@2x.png");
+  }
+}
 .gallery__picture {
   border-radius: 18px;
   overflow: hidden;
@@ -1408,10 +1428,37 @@ header {
   padding-top: 32px;
 }
 
+.background-block {
+  background-color: #84a178;
+}
+
+.location .container {
+  position: relative;
+  top: -353px;
+}
+@media screen and (min-width: 768px) {
+  .location .container {
+    top: -299px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location .container {
+    top: -128px;
+  }
+}
+
 .location {
-  /* text-align: center; */
-  background-color: transparent;
-  padding: 0;
+  margin-bottom: -353px;
+}
+@media screen and (min-width: 768px) {
+  .location {
+    margin-bottom: -299px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location {
+    margin-bottom: -128px;
+  }
 }
 .location__block {
   margin: 0 auto;
@@ -1442,7 +1489,7 @@ header {
   padding-bottom: 24px;
   box-shadow: 0px 8px 30px rgba(47, 45, 46, 0.1);
   border-radius: 24px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -1474,7 +1521,7 @@ header {
 .location-nav {
   max-width: 216px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin: 0;
   margin-top: 20px;
 }
@@ -1680,7 +1727,7 @@ header {
 .footer {
   background: #84a178;
   width: 100%;
-  padding-top: 1095px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 480px) {
   .footer {
@@ -1691,20 +1738,19 @@ header {
   .footer {
     display: flex;
     flex-direction: column;
-    padding-top: 360px;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
     flex-direction: column;
-    padding-top: 636px;
+    padding-top: 120px;
   }
 }
 
-.footer .container {
+/* .footer .container {
   padding: 20px;
-}
-
+} */
 .footer__container {
   margin: 0px;
 }
@@ -2272,22 +2318,38 @@ header {
   }
 }
 .modal-location__map {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .modal-location__map {
+    margin-bottom: 32px;
+  }
 }
 
 .button-close {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 8px;
+  right: 8px;
   pointer-events: all;
   background-color: #fcfcfc;
   border: none;
 }
-
-.modal-close {
+@media screen and (min-width: 768px) {
+  .button-close {
+    top: 12px;
+    right: 12px;
+  }
+}
+.button-close.modal-close {
   background-color: #fcfcfc;
   width: 20px;
   height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .button-close.modal-close {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* модальне вікно */
