@@ -1304,6 +1304,17 @@ header {
 
 .gallery {
   background-image: url("../src/images/Bg_mobile.png");
+  padding-bottom: 330px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-bottom: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 110px;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .gallery {
@@ -1331,10 +1342,10 @@ header {
   }
 }
 .gallery__picture {
-  border-radius: 18px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
-  top: -32px;
+  top: -80px;
 }
 @media screen and (min-width: 768px) {
   .gallery__picture {
