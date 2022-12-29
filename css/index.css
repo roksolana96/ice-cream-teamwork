@@ -1569,16 +1569,16 @@ header {
 }
 .location-nav__city {
   color: #131313;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
   .location-nav__city {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   .location-nav__city {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 }
 .location-nav__map {
@@ -1594,19 +1594,19 @@ header {
 .location-nav__hour {
   color: #ababab;
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .location-nav__hour:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .location-nav__hour {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
   .location-nav__hour {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1688,6 +1688,7 @@ header {
 }
 
 .button {
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   font-size: 14px;
@@ -2144,13 +2145,23 @@ header {
 .modal-howmade {
   position: fixed;
   width: 280px;
-  padding: 28px 0px;
+  padding: 28px;
   margin: auto;
   background-color: #fcfcfc;
   border: 1px solid #f8d24e;
   border-radius: 10px;
   top: 50%;
   left: 50%;
+}
+@media screen and (min-width: 768px) {
+  .modal-howmade {
+    width: 568px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-howmade {
+    padding: 28px 60px;
+  }
 }
 .modal-howmade__title {
   font-family: "Seymour One", Arial, Helvetica, sans-serif;
@@ -2171,8 +2182,8 @@ header {
   display: inline-block;
 }
 .modal-howmade__text {
-  width: 224px;
-  font-size: 14px;
+  text-align: left;
+  font-size: 16px;
   line-height: 1.4;
   margin: 0 auto;
   color: #131313;
