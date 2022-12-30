@@ -233,8 +233,6 @@ header {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,6 +278,10 @@ header {
   transform: translateX(0);
 }
 
+.mobile-menu {
+  text-align: center;
+}
+
 .mobile-menu_link {
   font-style: normal;
   font-weight: 700;
@@ -291,7 +293,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   color: #fcfcfc;
-  padding-top: 32px;
+  margin-top: 32px;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu_link {
@@ -303,8 +305,12 @@ header {
 .logo {
   margin-right: auto;
   padding: 0px;
-  width: 60px;
-  height: 65px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 60px;
+    height: 65px;
+  }
 }
 
 .header__logo {
@@ -339,8 +345,8 @@ header {
 @media screen and (min-width: 1200px) {
   .desktop-menu {
     display: flex;
-    margin-left: 309px;
-    margin-top: 40px;
+    margin-right: auto;
+    margin-top: 20px;
   }
 }
 
@@ -348,6 +354,16 @@ header {
 .mdesktop-menu_link:focus {
   color: #f8d24e;
   transition: color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__button {
+  margin-bottom: 114px;
+}
+
+@media screen and (max-width: 767.167px) {
+  .button.button__buy-now--none {
+    display: none;
+  }
 }
 
 .hero {
@@ -2005,30 +2021,29 @@ header {
   }
 }
 
-/* модальне вікно * Updated upstream
-/*.modal-buy-form {
-​
-​
-.modal-buy {
+.modal-buy-form {
+  /* модальне вікно modal-form*/
+  /* модальна форма modal-form*/
+}
+.modal-buy-form ​ ​ .modal-buy {
   position: fixed;
   width: 280px;
   padding: 28px 0px;
   margin: auto;
-  background-color: getColor(theme-white);
-  border: 1px solid getColor(yellow-main);
+  background-color: #fcfcfc;
+  border: 1px solid #f8d24e;
   border-radius: 10px;
   top: 50%;
   left: 50%;
 }
-​
-.modal-close {
+.modal-buy-form ​ .modal-close {
   background-color: unset;
   border: none;
   position: absolute;
   top: 12px;
   right: 12px;
-}*/
-.visually-hidden {
+}
+.modal-buy-form .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -2041,9 +2056,7 @@ header {
           clip-path: inset(50%);
   margin: -1px;
 }
-
-/* модальне вікно modal-form*/
-.modal-title {
+.modal-buy-form .modal-title {
   margin: 20px 91px;
   font-family: "Seymour One";
   font-style: normal;
@@ -2054,28 +2067,24 @@ header {
   text-align: center;
   color: #131313;
 }
-
-.modal-buy-now {
+.modal-buy-form .modal-buy-now {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.modal_buy-now__item {
+.modal-buy-form .modal_buy-now__item {
   position: relative;
   margin-bottom: 20px;
   width: 132px;
   height: 200px;
 }
-
-.product-ice-coffe {
+.modal-buy-form .product-ice-coffe {
   height: 136px;
   margin-top: 63px;
   margin-bottom: 0px;
   border-radius: 15px;
 }
-
-.modal_buy-now-product__frame {
+.modal-buy-form .modal_buy-now-product__frame {
   margin-top: 63px;
   margin-bottom: 0px;
   height: 136px;
@@ -2083,14 +2092,12 @@ header {
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
 }
-
-.modal_buy-now-product__image {
+.modal-buy-form .modal_buy-now-product__image {
   position: absolute;
   top: -50%;
   left: 0;
 }
-
-.modal_buy-now-product__name {
+.modal-buy-form .modal_buy-now-product__name {
   position: absolute;
   left: 15px;
   bottom: 20px;
@@ -2102,28 +2109,22 @@ header {
   text-transform: uppercase;
   color: #131313;
 }
-
-.modal_buy-now-checkbox input:checked + .product-ice-cream {
+.modal-buy-form .modal_buy-now-checkbox input:checked + .product-ice-cream {
   background-color: #aec6a5;
 }
-
-.modal_buy-now-checkbox input:checked + .product-ice-coffe {
+.modal-buy-form .modal_buy-now-checkbox input:checked + .product-ice-coffe {
   background-color: #efd478;
 }
-
-.modal_buy-now-checkbox input:checked + .product-milkshake {
+.modal-buy-form .modal_buy-now-checkbox input:checked + .product-milkshake {
   background-color: #d6936d;
 }
-
-/* модальна форма modal-form*/
-.modal-forma {
+.modal-buy-form .modal-forma {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
-
-.modal-input {
+.modal-buy-form .modal-input {
   margin-bottom: 12px;
   width: 224px;
   height: 32px;
@@ -2131,8 +2132,7 @@ header {
   border: 1px solid #84a178;
   border-radius: 10px;
 }
-
-.user-coment-area {
+.modal-buy-form .user-coment-area {
   width: 224px;
   height: 32px;
   resize: none;
